@@ -2,30 +2,99 @@
 <html>
     <title>zenwwc</title>
     <head>
-        <meta name="description" content="#">
+        <meta name="description" content="Building Community Through Positive Life Disruption">
         
         <!-- Meta Tags  -->
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+            <meta name="og:image" content="www.zenwwc.com/images/background.jpg">
         <!-- CSS -->
             <link rel="stylesheet" href="index.css">
         <!-- insert font here --> 
-            
+            <link href="https://fonts.googleapis.com/css?family=Karma&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap" rel="stylesheet">
         <!-- Social Media icons --> 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- JS -->
             <script src="index.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <!-- Twitter Card --> 
         <meta name="twitter:card" content="summary_large_image"/>
         <meta name="twitter:site" content="@zenwwc">             
         <meta name="twitter:creator" content="@zenwwc">
         <meta name="twitter:title" content="zenwwc"/> 
-        <meta name="twitter:description" content="#"/>
-        <meta name="twitter:image:src" content="#"/>
+        <meta name="twitter:description" content="Building Community Through Positive Life Disruption"/>
+        <meta name="twitter:image:src" content="www.zenwwc.com/images/background.jpg"/>
     </head>
     <style></style>
     <body>
-        <svg id="fader"></svg>
+        <svg id="fader">
+            <div id="main">
+<script>
+function readyHandler() {
+    var ih = String(window.innerHeight+"px");
+    document.getElementById("mainBackground").style.height = ih;
+    console.log("This one worked at least");
+};
+function resizeHandler() {
+    var ih = String(window.innerHeight+"px");
+    document.getElementById("mainBackground").style.height = ih;
+    console.log("Worked, but no effect!");
+};
+$(window).ready(readyHandler);
+$(window).resize(resizeHandler);
+</script>
+                <div id="mainBackground">
+                    <div id="mainTitle">zenwwc</div>
+                    <div id="mainSubtitle">Building Community Through<br> Positive Life Disruption</div>
+                    <div id="mainOptionsWrapper">
+                        <div class="anOption">
+                            <div class="anOptionText">READ</div>
+                        </div>
+                        <div class="anOption">
+                            <div class="anOptionText">CONSULT</div>
+                        </div>
+                    </div>
+                    <div id="mainSocialWrapper">
+                        <div class="fa fa-facebook"></div>
+                        <div class="fa fa-twitter"></div>
+                        <div class="fa fa-youtube"></div>
+                        <div class="fa fa-tumblr"></div>
+                        <div class="fa fa-envelope"></div>
+                        <div class="fa fa-instagram"></div>
+                        <style>
+                            .fa {
+                                border-radius: 50px;
+                                background-color: white;
+                                height: 40px;
+                                padding-top: 10px;
+                                width: 50px;
+                                float: left;
+                                font-size: 30px;
+                                text-align: center;
+                                margin-right: 20px;
+                                color: black;
+                            }
+                            .fa:hover {
+                                background-color: rgba(255, 190, 41, 0.7);
+                                color: white;
+                                cursor: pointer;
+                                transition: .5s;
+                            }
+                            @media screen and (max-width: 500px) {
+                                .fa {
+                                    height: 30px;
+                                    width: 40px;
+                                    font-size: 22px;
+                                    margin-right: 10px;
+                                    padding-top: 8px;
+                                }
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </svg>
         <script>
              fadeInPage();
             
