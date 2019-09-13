@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <title>zenwwc</title>
+    <head>
+        <meta name="description" content="#">
+        
+        <!-- Meta Tags  -->
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+        <!-- CSS -->
+            <link rel="stylesheet" href="index.css">
+        <!-- insert font here --> 
+            
+        <!-- Social Media icons --> 
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- JS -->
+            <script src="index.js"></script>
+        <!-- Twitter Card --> 
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@zenwwc">             
+        <meta name="twitter:creator" content="@zenwwc">
+        <meta name="twitter:title" content="zenwwc"/> 
+        <meta name="twitter:description" content="#"/>
+        <meta name="twitter:image:src" content="#"/>
+    </head>
+    <style></style>
+    <body>
+        <svg id="fader"></svg>
+        <script>
+             fadeInPage();
+            
+            //fade-in, fade-out 
+            document.addEventListener('DOMContentLoaded', function() {
+                if (!window.AnimationEvent) { return; }
+                var anchors = document.getElementsByTagName('a');
+    
+            for (var idx=0; idx<anchors.length; idx+=1) {
+                if (anchors[idx].hostname !== window.location.hostname) {
+                continue;
+                }
+            anchors[idx].addEventListener('click', function(event) {
+            var localPath = '/wp-content/uploads/'
+            
+            if (anchors[idx].hostname !== window.location.hostname || anchors[idx].pathname === window.location.pathname || anchors[idx].pathname.indexOf(localPath) !== -1) {
+              //continue;
+            }
+            var fader = document.getElementById('fader'),
+                anchor = event.currentTarget;
+            
+            var listener = function() {
+                window.location = anchor.href;
+                fader.removeEventListener('animationend', listener);
+            };
+            fader.addEventListener('animationend', listener);
+            
+            event.preventDefault();
+            fader.classList.add('fade-in');
+            });
+            }
+            });
+            window.addEventListener('pageshow', function (event) {
+            if (!event.persisted) {
+            return;
+            }
+                    var fader = document.getElementById('fader');
+            fader.classList.remove('fade-in');
+            });
+        </script>
+    </body>
+</html>
