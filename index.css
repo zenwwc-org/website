@@ -44,8 +44,8 @@ body {
 }
 #mainBackground {
     position: absolute;
-    background-image: url(images/background.jpg);
-    background-position: center;
+    background-image: url(images/background.jpeg);
+    background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -56,6 +56,7 @@ body {
     font-size: 120px; 
     margin-top: 200px;
     margin-left: 150px;
+    text-shadow: 2px 2px black;
 }
 #mainSubtitle {
     font-family: 'Cormorant Garamond';
@@ -63,6 +64,7 @@ body {
     font-size: 30px;
     margin-top: -30px;
     margin-left: 150px;
+    text-shadow: 2px 2px black;
 }
 #mainOptionsWrapper {
     height: 100px;
@@ -141,7 +143,4 @@ body {
         padding: 10px 0px;
         margin-right: 20px;
     }
-}
-@media screen and (max-width: 330px) {
-    .
 }
