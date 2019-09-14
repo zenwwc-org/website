@@ -93,7 +93,14 @@ body {
     margin-left: 150px;
 }
 
+.phoneOnly {
+    display: none;
+}
+
 @media screen and (max-width: 500px) {
+    .phoneOnly {
+        display: block;
+    }
     #main {
         background-color: red;
     }
