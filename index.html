@@ -46,13 +46,13 @@ $(window).resize(resizeHandler);
 </script>
                 <div id="mainBackground">
                     <div id="mainTitle">zenwwc</div>
-                    <div id="mainSubtitle">Building Community Through<br> Positive Life Disruption</div>
+                    <div id="mainSubtitle">Building Community Through<br class="desktopOnly"> Positive Life Disruption</div>
                     <div id="mainOptionsWrapper">
                         <div class="anOption">
                             <div class="anOptionText">Follow <br>the<br class="phoneOnly"> adventure!</div>
                         </div>
                         <div class="anOption">
-                            <div class="anOptionText">I want to tell you something!</div>
+                            <div class="anOptionText">Tell <br>me something!</div>
                         </div>
                     </div>
                     <div id="mainSocialWrapper">
@@ -88,6 +88,14 @@ $(window).resize(resizeHandler);
                                     font-size: 22px;
                                     margin-right: 10px;
                                     padding-top: 8px;
+                                }
+                            }
+                            @media screen and (max-width: 330px) {
+                                .fa {
+                                    margin-right: 8px;
+                                    height: 26px;
+                                    width: 33px;
+                                    padding-top: 5px;
                                 }
                             }
                         </style>
