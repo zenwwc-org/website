@@ -102,6 +102,34 @@ body {
     display: block;
 }
 
+#aMain {
+    background-color: slategrey;
+    width: 100%;
+    position: absolute;
+}
+#aContainer {
+    width: 50%;
+    margin: auto;
+    height: 350px;
+    margin-top: 250px;
+}
+#top {
+    height: 148px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+#bottom {
+    height: 150px;
+    width: 100%;
+}
+.title {
+    font-family: 'Karma';
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
 @media screen and (max-width: 500px) {
     .phoneOnly {
         display: block;
