@@ -54,7 +54,7 @@ body {
 #mainTitle {
     font-family: 'Karma';
     font-size: 120px; 
-    margin-top: 200px;
+    margin-top: 100px;
     margin-left: 150px;
     text-shadow: 2px 2px black;
 }
@@ -66,8 +66,17 @@ body {
     margin-left: 150px;
     text-shadow: 2px 2px black;
 }
+.header {
+    font-family: 'Cormorant Garamond';
+    font-weight: 200;
+    font-size: 20px;
+    margin-left: 150px;
+    width: 70%;
+    margin-top: 20px;
+    text-align: justify;
+}
 #mainOptionsWrapper {
-    height: 100px;
+    height: 120px;
     margin-left: 150px;
     margin-top: 40px;
 }
@@ -75,18 +84,31 @@ body {
     font-family: 'Karma';
     font-size: 18px;
     font-weight: bolder;
-    float: left;
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     text-align: center;
-    border-radius: 15px;
     width: 100px;
     padding: 10px;
     margin-right: 50px;
+    z-index: 2;
+    position: relative;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#mainOptionsWrapper a {
+    text-decoration: none;
+}
+.linearOutline {
+    height: 110px;
+    width: 130px;
+    background-image: linear-gradient(to right, #3D9DAB, #683D8F);
+    float: left;
+    margin-right: 50px;
+    border-radius: 5px;
 }
 .anOption:hover {
-    background-color: rgba(255, 190, 41, 0.7);
-    color: white;
+    background-color: white;
+    color: black;
     cursor: pointer;
     transition: .5s;
 }
@@ -137,38 +159,50 @@ body {
     .desktopOnly {
         display: none;
     }
-    #main {
-        background-color: red;
+    #mainBackground {
+        height: 1000px;
+        width: 100%;
     }
     #mainSocialWrapper {
-        width: 80%;
+        width: 60%;
         margin: auto;
     }
     #mainTitle {
-        font-size: 90px;
-        width: 90%;
-        margin: auto;
+        font-size: 60px;
+        width: 20%;
         text-align: center;
-        margin-top: 80px;
+        margin-left: 20px;
+        margin-top: 20px;
     }
     #mainSubtitle {
         width: 80%;
-        margin: auto;
         text-align: left;
-        margin-top: -30px;
+        margin-left: 20px;
+        margin-top: -10px;
         font-size: 25px;
     }
-    #mainOptionsWrapper {
+    .header {
         width: 80%;
+        margin-left: 20px;
+    }
+    .linearOutline {
+        width: 40%;
+        float: left;
+        margin-left: 18px;
+        margin-right: 18px;
+    }
+    #mainOptionsWrapper {
+        width: 100%;
         margin: auto;
         margin-top: 25px;
     }
     #mainSocialWrapper {
+        width: 70%;
         margin-top: 30px;
     }
     .anOption {
-        width: 40%;
+        width: 91%;
         padding: 10px 0px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 }

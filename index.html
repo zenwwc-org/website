@@ -33,35 +33,46 @@
 <script>
 function readyHandler() {
     var ih = String(window.innerHeight+"px");
+    if (window.innerWidth > 500) {
     document.getElementById("mainBackground").style.height = ih;
     console.log("This one worked at least");
+    };
 };
 function resizeHandler() {
     var ih = String(window.innerHeight+"px");
     document.getElementById("mainBackground").style.height = ih;
     console.log("Worked, but no effect!");
 };
+
 $(window).ready(readyHandler);
 $(window).resize(resizeHandler);
 </script>
                 <div id="mainBackground">
                     <div id="mainTitle">zenwwc</div>
                     <div id="mainSubtitle">Building Community Through<br class="desktopOnly"> Positive Life Disruption</div>
+                    <div class="header">A rough draft. Exactly the way I see my life, as a rough draft, something to be reviewed, thought about, worked on and through, and ever-changing. </div>
+                    <div class="header">zenwwc is a work in progress. The main focus of zenwwc is community. How to build it. How to find it. How to encourage it to be stronger, more close knit, and long lasting.</div>
+                    <div class="header">As I travel around the world I’ll be seeking out individuals, environments, businesses, groups, and organizations that feel like they have some kernels of knowledge about community to share. I will also be working with those same entities to find ways that I can help them build stronger communities, either by enhancing what they already have or by helping them establish some new aspect of community.</div>
                     <div id="mainOptionsWrapper">
                         <a href="about/adventure.html">
-                        <div class="anOption">
-                            <div class="anOptionText">Follow <br>the<br class="phoneOnly"> adventure!</div>
-                        </div></a>
+                            <div class="linearOutline">
+                                <div class="anOption">
+                                    <div class="anOptionText">Follow <br>the<br class="phoneOnly"> adventure!</div>
+                                </div>
+                            </div>
+                        </a>
                         <a href="about/tellme.html">
-                        <div class="anOption">
-                            <div class="anOptionText">Tell <br>me <br class="phoneOnly">something!</div>
-                        </div></a>
+                            <div class="linearOutline">
+                                <div class="anOption">
+                                    <div class="anOptionText">Tell <br>me<br class="phoneOnly"> something!</div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div id="mainSocialWrapper">
                         <a href="https://www.facebook.com/thezenwwc/?eid=ARAqo-lphopHDID9FAx-iWJQtsCjuzThsPF34hegJpP5zKPFSkA0KrQjcoTm-HS00pGK9LMMwlnalSaf&timeline_context_item_type=intro_card_work&timeline_context_item_source=72104716&fref=tag"><div class="fa fa-facebook"></div></a>
                         <div class="fa fa-twitter"></div>
                         <div class="fa fa-youtube"></div>
-                        <div class="fa fa-tumblr"></div>
                         <a href='mailto:zenwwc@gmail.com'><div class="fa fa-envelope"></div></a>
                         <a href="https://www.instagram.com/zenwwc/"><div class="fa fa-instagram"></div></a>
                         <style>
