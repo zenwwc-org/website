@@ -33,17 +33,19 @@
 <script>
 function readyHandler() {
     var ih = String(window.innerHeight+"px");
-    if (window.innerWidth > 500) {
-    document.getElementById("mainBackground").style.height = ih;
-    console.log("This one worked at least");
-    };
+    if (window.innerWidth < 370) {
+        document.getElementById("mainBackground").style.height = '1100px';
+    }
+    else {
+        document.getElementById("mainBackground").style.height = ih;
+        console.log("This one worked at least");
+    }
 };
 function resizeHandler() {
     var ih = String(window.innerHeight+"px");
     document.getElementById("mainBackground").style.height = ih;
     console.log("Worked, but no effect!");
 };
-
 $(window).ready(readyHandler);
 $(window).resize(resizeHandler);
 </script>
@@ -61,7 +63,7 @@ $(window).resize(resizeHandler);
                                 </div>
                             </div>
                         </a>
-                        <a href="about/tellme.html">
+                        <a href="mailto:zenwwc@gmail.com">
                             <div class="linearOutline">
                                 <div class="anOption">
                                     <div class="anOptionText">Tell <br>me<br class="phoneOnly"> something!</div>
@@ -89,7 +91,7 @@ $(window).resize(resizeHandler);
                                 color: black;
                             }
                             .fa:hover {
-                                background-color: rgba(255, 190, 41, 0.7);
+                                background-image: linear-gradient(to right, #3D9DAB, #683D8F);
                                 color: white;
                                 cursor: pointer;
                                 transition: .5s;
