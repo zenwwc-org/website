@@ -30,25 +30,27 @@
     <body>
         <svg id="fader">
             <div id="main">
+<!--
 <script>
 function readyHandler() {
     var ih = String(window.innerHeight+"px");
     if (window.innerWidth < 370) {
-        document.getElementById("mainBackground").style.height = '1100px';
+        document.getElementById("mainBackground").style.height = '1400px';
+        console.log("working with a smaller screen");
     }
     else {
         document.getElementById("mainBackground").style.height = ih;
         console.log("This one worked at least");
     }
-};
+}; 
 function resizeHandler() {
     var ih = String(window.innerHeight+"px");
     document.getElementById("mainBackground").style.height = ih;
-    console.log("Worked, but no effect!");
+    console.log("This should have resized");
 };
 $(window).ready(readyHandler);
 $(window).resize(resizeHandler);
-</script>
+</script> --> 
                 <div id="mainBackground">
                     <div id="mainTitle">zenwwc</div>
                     <div id="mainSubtitle">Building Community Through<br class="desktopOnly"> Positive Life Disruption</div>
@@ -73,8 +75,8 @@ $(window).resize(resizeHandler);
                     </div>
                     <div id="mainSocialWrapper">
                         <a href="https://www.facebook.com/thezenwwc/?eid=ARAqo-lphopHDID9FAx-iWJQtsCjuzThsPF34hegJpP5zKPFSkA0KrQjcoTm-HS00pGK9LMMwlnalSaf&timeline_context_item_type=intro_card_work&timeline_context_item_source=72104716&fref=tag"><div class="fa fa-facebook"></div></a>
-                        <div class="fa fa-twitter"></div>
-                        <div class="fa fa-youtube"></div>
+                        <a href="https://twitter.com/zenwwc"><div class="fa fa-twitter"></div></a>
+                        <a href="https://www.youtube.com/channel/UC6h7PqZVN48s-LldJUAt0yg"><div class="fa fa-youtube"></div></a>
                         <a href='mailto:zenwwc@gmail.com'><div class="fa fa-envelope"></div></a>
                         <a href="https://www.instagram.com/zenwwc/"><div class="fa fa-instagram"></div></a>
                         <style>
